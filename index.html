@@ -1,0 +1,184 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Coding the City We Want to Live In</title>
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+
+        <link href="http://fonts.googleapis.com/css?family=Arvo|Alegreya+Sans" rel="stylesheet" type="text/css">
+
+        <link href="../css/pig.css" rel="stylesheet" type="text/css" />
+        <link href="../css/base.css" rel="stylesheet" />
+
+        <script src="../js/pig.js"></script>
+    </head>
+    <body>
+
+        <div class="slide">
+            <h1>Coding the City We Want to Live In</h1>
+        </div>
+
+        <!-- Origins -->
+
+        <div class="slide" style="background-image: url(img/halsey.jpg);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/patch.jpg);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/patch.jpg);">
+            <h1>Where is the vacant land in NYC?</h1>
+        </div>
+
+        <div class="slide" style="background-image: url(img/patch.jpg);">
+            <h1>... and who controls it?</h1>
+        </div>
+
+        <div class="slide">
+            <h1>Four challenges to overcome:</h1>
+        </div>
+
+        <div class="slide" style="background-image: url(img/mappluto.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/mappluto.png);">
+            <h1>1. Access to the data</h1>
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/qgis.png);">
+            <h1>2. Using the data</h1>
+        </div>
+
+        <div class="slide" style="background-image: url(img/flowchart-govt.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/flowchart-govt.png);">
+            <h1>3. Who controls the land? Who do you talk to?</h1>
+        </div>
+
+        <div class="slide" style="background-image: url(img/flowchart-community.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/flowchart-community.png);">
+            <h1>4. How do you work with your neighbors on something like this?</h1>
+        </div>
+
+        <!-- Solution -->
+
+        <div class="slide" style="background-image: url(img/uk-uncut.jpg);">
+            <a class="source" href="http://ukuncut.org.uk">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/uk-uncut-library.jpg);">
+            <a class="source" href="http://campaignhandbook.gef.eu/uk-uncu-direct-actions-campaigns/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/uk-uncut-action-list.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/596-old.png);">
+            <a class="source" href="http://596acres.org">596acres.org</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/llnyc.png);">
+            <a class="source" href="https://livinglotsnyc.org">livinglotsnyc.org</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/.jpg);">
+            <h1>TODO demo:</h1>
+            <ol>
+              <li>search in an area</li>
+              <li>find a parcel with activity</li>
+              <li>look at parcel, details like who to call</li>
+            </ol>
+        </div>
+
+        <div class="slide" style="background-image: url(img/llnyc-download.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/llnyc-filter.png);">
+        </div>
+
+        <div class="slide">
+            <h1>Built on open source</h1>
+        </div>
+
+        <div class="slide" style="background-image: url(img/techs.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/.jpg);">
+            <pre><code>SELECT * 
+FROM lots_lot
+ORDER BY centroid &lt;-&gt; <strong>my_location</strong>
+LIMIT 5</code></pre>
+        </div>
+
+        <div class="slide" style="background-image: url(img/.jpg);">
+            <pre><code>SELECT * 
+FROM lots_lot
+ORDER BY centroid &lt;-&gt; 
+  <strong>ST_SetSRID(ST_MakePoint(40.645, -73.965), 4326)</strong>
+LIMIT 5</code></pre>
+        </div>
+
+        <div class="slide" style="background-image: url(img/596-signs.jpg);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/596-signs.jpg);">
+            <h1>online is not enough!</h1>
+        </div>
+
+        <div class="slide" style="background-image: url(img/halsey-cleanup.jpg);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/halsey.jpg);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/successes.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/successes.png);">
+            <h1>37 groups of neighbors working together have access to 8 acres of land</h1>
+        </div>
+
+        <!-- Evolution -->
+
+        <div class="slide" style="background-image: url(img/596acres-new.png);">
+            <a class="source" href="https://596acres.org">596acres.org</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/596acres-new.png);">
+            <h1>596 Acres became an entity</h1>
+            <a class="source" href="https://596acres.org">596acres.org</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/596acres-new.png);">
+            <h1>With part-time staff</h1>
+            <a class="source" href="https://596acres.org">596acres.org</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/grounded.png);">
+            <a class="source" href="https://groundedinphilly.org">groundedinphilly.org</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/laopenacres.png);">
+            <a class="source" href="https://laopenacres.org">laopenacres.org</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/urbanreviewer.png);">
+            <a class="source" href="http://urbanreviewer.org">urbanreviewer.org</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/nycommons.png);">
+            <a class="source" href="https://nycommons.org">nycommons.org</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/django-livinglots.png);">
+            <a class="source" href="https://github.com/596acres/django-livinglots">github.com/596acres/django-livinglots</a>
+        </div>
+
+    </body>
+</html>
