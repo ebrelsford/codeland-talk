@@ -30,8 +30,18 @@
             <h1>Where is the vacant land in NYC?</h1>
         </div>
 
-        <div class="slide" style="background-image: url(img/patch.jpg);">
+        <div class="slide" style="background-image: url(img/hpd-sign.jpg);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/hpd-sign.jpg);">
             <h1>... and who controls it?</h1>
+        </div>
+
+        <div class="slide" style="background-image: url(img/596-poster.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/596-poster.png);">
+            <h1>We decided to map public vacant land and work with communities that want to use it</h1>
         </div>
 
         <div class="slide">
@@ -87,19 +97,19 @@
             <a class="source" href="https://livinglotsnyc.org">livinglotsnyc.org</a>
         </div>
 
-        <div class="slide" style="background-image: url(img/.jpg);">
-            <h1>TODO demo:</h1>
-            <ol>
-              <li>search in an area</li>
-              <li>find a parcel with activity</li>
-              <li>look at parcel, details like who to call</li>
-            </ol>
+        <div class="slide" style="background-image: url(img/llnyc.png);">
+            <h1>Demo!</h1>
+            <a class="source" href="https://livinglotsnyc.org">livinglotsnyc.org</a>
         </div>
 
         <div class="slide" style="background-image: url(img/llnyc-download.png);">
         </div>
 
         <div class="slide" style="background-image: url(img/llnyc-filter.png);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/django-livinglots.png);">
+            <a class="source" href="https://github.com/596acres/django-livinglots">github.com/596acres/django-livinglots</a>
         </div>
 
         <div class="slide">
@@ -111,15 +121,27 @@
 
         <div class="slide" style="background-image: url(img/.jpg);">
             <pre><code>SELECT * 
-FROM lots_lot
-ORDER BY centroid &lt;-&gt; <strong>my_location</strong>
+FROM lots
+ORDER BY location &lt;-&gt; <strong>my_location</strong>
 LIMIT 5</code></pre>
         </div>
 
         <div class="slide" style="background-image: url(img/.jpg);">
             <pre><code>SELECT * 
-FROM lots_lot
-ORDER BY centroid &lt;-&gt; 
+FROM lots</code></pre>
+            <h1>"Give me everything you have about lots"</h1>
+        </div>
+
+        <div class="slide" style="background-image: url(img/.jpg);">
+            <pre><code>ORDER BY location &lt;-&gt; <strong>my_location</strong>
+LIMIT 5</code></pre>
+            <h1>"...but only the 5 closest to my_location"</h1>
+        </div>
+
+        <div class="slide" style="background-image: url(img/.jpg);">
+            <pre><code>SELECT * 
+FROM lots
+ORDER BY location &lt;-&gt; 
   <strong>ST_SetSRID(ST_MakePoint(40.645, -73.965), 4326)</strong>
 LIMIT 5</code></pre>
         </div>
@@ -132,6 +154,14 @@ LIMIT 5</code></pre>
         </div>
 
         <div class="slide" style="background-image: url(img/halsey-cleanup.jpg);">
+        </div>
+
+        <div class="slide" style="background-image: url(img/halsey-llnyc.png);">
+            <a class="source" href="https://livinglotsnyc.org/lot/3016640040/">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/halsey-patch.png);">
+            <a class="source" href="https://patch.com/new-york/bed-stuy/a-mission-to-grow">source</a>
         </div>
 
         <div class="slide" style="background-image: url(img/halsey.jpg);">
@@ -151,7 +181,7 @@ LIMIT 5</code></pre>
         </div>
 
         <div class="slide" style="background-image: url(img/596acres-new.png);">
-            <h1>596 Acres became an entity</h1>
+            <h1>596 Acres became an organization</h1>
             <a class="source" href="https://596acres.org">596acres.org</a>
         </div>
 
@@ -176,8 +206,16 @@ LIMIT 5</code></pre>
             <a class="source" href="https://nycommons.org">nycommons.org</a>
         </div>
 
-        <div class="slide" style="background-image: url(img/django-livinglots.png);">
-            <a class="source" href="https://github.com/596acres/django-livinglots">github.com/596acres/django-livinglots</a>
+        <div class="slide" style="background-image: url(img/next-city-tax-lien.png);">
+            <a class="source" href="https://nextcity.org/daily/entry/tax-lien-sale-threatens-hundreds-of-nyc-nonprofits">source</a>
+        </div>
+
+        <div class="slide" style="background-image: url(img/596acres-new.png);">
+            <h1>Thanks!</h1>
+            <div style="background: rgba(255, 255, 255, 0.7); display: inline-block; padding: 10px;">
+              <p>@ebrelsford</p>
+              <p>eric@596acres.org</p>
+            </div>
         </div>
 
     </body>
